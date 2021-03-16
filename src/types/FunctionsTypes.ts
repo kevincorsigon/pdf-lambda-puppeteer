@@ -1,0 +1,1 @@
+export type GeneratorFunction = (event: any, htmlInfo: any) => any;

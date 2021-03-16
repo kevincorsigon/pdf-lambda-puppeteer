@@ -28,10 +28,10 @@ provider:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 
 functions:
-  getPDF:
-    handler: handler.getPDF
-    memorySize: 1024 # Setting a higher RAM size to facilitate PDF generation
+  generatePDF:
+    handler: handler.generatePDF
+    memorySize: 256 
     events:
       - http:
-          method: get
-          path: /getPDF
+          method: post
+          path: /PDF
